@@ -14,7 +14,7 @@ int main(void)
     int solution = 0;
     while(!(factor * factor > y)) {
         if(x % factor == 0) {
-            i = factor / 3;
+            i = sqrt(x);
             if(i % 2 == 0) {
                 i--;
             }
