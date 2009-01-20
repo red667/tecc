@@ -13,4 +13,5 @@ primeFactors n = primeFactors' n 2 where
 primeFactors' n factor
 	| factor*factor > n   = [n]
 	| n `mod` factor == 0 = factor : primeFactors' (n `div` factor) factor
-	| otherwise           = primeFactors' n (factor + 1)
+	| factor == 2         = primeFactors' n (factor + 1)
+	| otherwise           = primeFactors' n (factor + 2)
