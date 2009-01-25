@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+	<div id="sum">
+	</div>
+	
+	<script>
+		function main ()
+		{
+			var i = 1;
+			var n = 1000;
+			var sum = 0;
+			for (i = 1; i < n; i++)
+			{
+				if (i % 3 == 0 || i % 5 == 0)
+				{
+					sum = sum + i;
+				}
+			}
+			document.getElementById('sum').innerHTML = sum;
+		}
+		main();
+		
+	</script>
+</body>
+</html>
