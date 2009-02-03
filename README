@@ -1,2 +1,21 @@
-folder structure:
-REPO/username/code_or_dirs
+Welcome To TECC - The Euler Coding Collective
+
+We are a group of Hackers joined together on hackerspaces.org to solve
+the coding problems from projecteuler.net in many different languages
+to show the world the beauty of code and train our skill in those
+programming languages.
+
+You can find our Wikipage at:
+http://hackerspaces.org/wiki/TECC
+
+If you are intersted in helping us solve more projecteuler.net problems
+please just join hackerspaces, fork the code and send pull request. Or
+send and request to be a collaborator.
+
+If you submit your code please use this folder structure!!!
+
+	REPO/username/code_or_dirs
+
+For more info read our Wikipage or just write an mail to:
+red667+deletethis+@hackerspaces.org
+tecc+deletethis+@hackerspaces.org
