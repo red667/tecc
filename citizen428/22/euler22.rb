@@ -1,4 +1,3 @@
-# index works, name score gets foobared
 def generate_name_score(name, index)
   name_score = 0
   name.each_byte { |c| name_score += c - 64 }
