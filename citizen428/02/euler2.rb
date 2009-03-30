@@ -1,11 +1,10 @@
 def find_even_fibonacci_numbers(max)
-  a,b = 0,1
+  a, b = 0, 1
   fib_array = []
 
-  loop do
+  until b >= max
     fib_array.push(b) if b % 2 == 0
     a,b = b,a+b
-    break if b >= max
   end
   fib_array
 end
