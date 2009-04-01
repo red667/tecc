@@ -5,8 +5,9 @@ def factorize(max)
     if max % num == 0
       factors.push(num)
       max = max / num
+      redo
     end
-    break if max == 1
+    break if max == 1 
   end
   factors
 end
