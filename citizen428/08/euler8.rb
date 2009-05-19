@@ -1,4 +1,16 @@
-number_string = <<NUM.gsub(/\n/, '')
+number_string = DATA.readlines.join
+
+max_product = 0
+
+0.upto(number_string.length - 5) do |i|
+  cur_product = 1
+  number_string.slice(i, 5).each_byte { |c| cur_product *= c.chr.to_i }
+  max_product = cur_product if cur_product > max_product
+end
+
+puts "Largest product of 5 consecutive digits in number_string: #{max_product}"
+
+__END__
 73167176531330624919225119674426574742355349194934
 96983520312774506326239578318016984801869478851843
 85861560789112949495459501737958331952853208805511
@@ -19,14 +31,4 @@ number_string = <<NUM.gsub(/\n/, '')
 84580156166097919133875499200524063689912560717606
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
-NUM
 
-max_product = 0
-
-0.upto(number_string.length - 5) do |i|
-  cur_product = 1
-  number_string.slice(i, 5).each_byte { |c| cur_product *= c.chr.to_i }
-  max_product = cur_product if cur_product > max_product
-end
-
-puts "Largest product of 5 consecutive digits in number_string: #{max_product}"
