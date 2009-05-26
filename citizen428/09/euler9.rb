@@ -7,9 +7,10 @@ solution = nil
 
 1.upto(998) do |a|
   1.upto(998) do |b|
-    next if (b == a || b + a >= 1000)
+    next if b == a 
+    break if b + a >= 1000
     c = 1000 - a - b     
-    if is_pythagorean_triplet?(a, b,  c)
+     if is_pythagorean_triplet?(a, b,  c)
       solution = a, b, c
       break
     end
