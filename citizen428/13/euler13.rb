@@ -1,7 +1,4 @@
-num_array = []
-
-# get each line into the array as an integer
-<<NUMS.split.each { |line| num_array.push(line.to_i) }
+puts <<NUMS.split.inject(0) { |s, i| s += i.to_i }.to_s.slice(0, 10)
 37107287533902102798797998220837590246510135740250
 46376937677490009712648124896970078050417018260538
 74324986199524741059474233309513058123726617309629
@@ -104,6 +101,4 @@ num_array = []
 53503534226472524250874054075591789781264330331690
 NUMS
 
-sum = num_array.inject(0) { |n, m| n += m }
-puts sum.to_s.slice(0, 10)
 
