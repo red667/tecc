@@ -1,5 +1,5 @@
 grid = []
-DATA.readlines.map do |line|
+DATA.readlines.each do |line|
   grid << (line.split.map! { |el| el.to_i})
 end
 
