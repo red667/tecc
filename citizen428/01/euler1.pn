@@ -1,0 +1,9 @@
+Number dividesBy = (x):
+  self % x == 0.
+ 
+sum = 0
+1 to 999 (x): 
+  if (x dividesBy(3) || x dividesBy(5)): sum += x
+_x
+(sum, "\n") join print
+
