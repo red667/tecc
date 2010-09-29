@@ -1,7 +1,7 @@
 a, b = 1, 1
 count = 2
 
-until a.to_s.length >= 1000
+while a < 10 ** 999
   a, b = a+b, a
   count += 1
 end
